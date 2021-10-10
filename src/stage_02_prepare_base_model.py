@@ -3,7 +3,6 @@ from src.utils.models import get_VGG_16_model,prepare_model
 import argparse
 import pandas as pd
 import os
-import shutil
 from tqdm import tqdm
 import logging
 import io
@@ -37,7 +36,7 @@ def prepare_base_model(config_path,param_path):
     )
 
 
-    update_base_mdoel = os.path.join(
+    update_base_model = os.path.join(
         base_model_dir_path,
         artifacts["UPDATED_BASE_MODEL_NAME"])
 
